@@ -7,4 +7,4 @@ julia:
   
 
 script:
-  - julia --color=yes -e 'using Pkg; Pkg.add(Pkg.add(PackageSpec(url="https://github.com/JuliaComputing/MKL.jl"))); Pkg.test("SharedArrays")'
+  - julia --color=yes -e 'using Pkg; Pkg.add(PackageSpec(url="https://github.com/JuliaComputing/MKL.jl")); Pkg.test("SharedArrays")'
